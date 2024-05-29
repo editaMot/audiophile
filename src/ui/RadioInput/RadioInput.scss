@@ -1,0 +1,33 @@
+.radio-input {
+  border: 1px solid var(--color-light-grey-3);
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-bold);
+  border-radius: 8px;
+  padding: 1.5rem 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  &--err {
+    border: 2px solid var(--color-red);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: var(--color-primary);
+  }
+
+  &__input {
+    height: 2rem;
+    width: 2rem;
+    outline-offset: 5px;
+    accent-color: var(--color-primary);
+  }
+
+  &__error {
+    color: var(--color-red);
+    font-weight: var(--font-weight-md);
+    text-align: right;
+  }
+}

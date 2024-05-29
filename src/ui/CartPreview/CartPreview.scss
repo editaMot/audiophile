@@ -1,0 +1,31 @@
+.cart-preview {
+  background-color: var(--color-white);
+  padding: 1.5rem 2.8rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 3.2rem;
+
+  &__empty {
+    height: 30rem;
+    width: 25rem;
+    text-align: center;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__cart {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}

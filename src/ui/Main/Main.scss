@@ -1,0 +1,10 @@
+.main {
+  box-shadow: 0 0 0 100vmax var(--color-white);
+  clip-path: inset(0 -100vmax);
+}
+
+.container {
+  background-color: var(--color-white);
+  min-height: 65vh;
+  padding-top: 6rem;
+}

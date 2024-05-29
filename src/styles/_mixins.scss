@@ -1,0 +1,36 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (min-width: 23.43em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab {
+    @media only screen and (min-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 69.4em) {
+      @content;
+    }
+  }
+}
+
+@mixin text($type) {
+  text-transform: uppercase;
+
+  @if $type == overline {
+    font-size: 1.4rem;
+    line-height: 19px;
+    letter-spacing: 10px;
+    font-weight: 400;
+  }
+
+  @if $type == sub-title {
+    font-size: 1.3rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+}

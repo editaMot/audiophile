@@ -1,0 +1,25 @@
+.order-confirmation {
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem;
+  gap: 2.4rem;
+  background-color: var(--color-white);
+  border-radius: 8px;
+
+  @include respond(phone) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @include respond(tab) {
+    width: 80%;
+  }
+
+  @include respond(desktop) {
+    width: 60%;
+  }
+
+  & img {
+    width: 6.4rem;
+  }
+}

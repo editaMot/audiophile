@@ -1,0 +1,42 @@
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin: 4rem 0;
+
+  @include respond(tab) {
+    gap: 8rem;
+    margin: 8rem 0 3rem;
+  }
+
+  @include respond(desktop) {
+    flex-direction: row;
+    margin: 10rem 0 3rem;
+  }
+
+  &__features,
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__content {
+    @include respond(tab) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include respond(desktop) {
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 30%;
+    }
+  }
+
+  &__features {
+    @include respond(desktop) {
+      width: 60%;
+    }
+  }
+}

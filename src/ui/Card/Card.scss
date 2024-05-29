@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 16.5rem;
+  background-color: var(--color-light-grey);
+  border-radius: 8px;
+  padding: 1.5rem;
+
+  @include respond(tab) {
+    width: calc((100% / 3) - 1rem);
+  }
+
+  @include respond(desktop) {
+    width: 35rem;
+    height: 20rem;
+  }
+
+  &__image {
+    margin-bottom: -1rem;
+    max-width: 15rem;
+
+    @include respond(tab) {
+      max-width: 16rem;
+    }
+
+    @include respond(desktop) {
+      max-width: 22rem;
+    }
+  }
+}

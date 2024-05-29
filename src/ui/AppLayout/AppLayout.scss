@@ -1,0 +1,10 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+
+  @include respond(desktop) {
+    max-width: 111.3rem;
+    padding: 0 2.4rem;
+    margin: 0 auto;
+  }
+}

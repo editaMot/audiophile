@@ -1,0 +1,26 @@
+.cart {
+  order: 3;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  &__amount {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    position: absolute;
+    top: -1.3rem;
+    left: 1.5rem;
+  }
+}

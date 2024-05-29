@@ -1,0 +1,64 @@
+.gear-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12rem;
+
+  @include respond(tab) {
+    padding-bottom: 9.6rem;
+  }
+
+  @include respond(desktop) {
+    flex-direction: row-reverse;
+    gap: 9rem;
+    padding-bottom: 16rem;
+  }
+
+  &__image {
+    border-radius: 8px;
+    background-image: url("../../assets/tablet/image-best-gear-tab.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+
+    @include respond(desktop) {
+      background-image: url("../../assets/desktop/image-best-gear-desk.jpg");
+      background-position: center;
+      max-width: 49%;
+      height: 58.8rem;
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    @include respond(tab) {
+      max-width: 75%;
+    }
+
+    @include respond(desktop) {
+      width: 50%;
+      text-align: left;
+    }
+  }
+
+  &__heading {
+    padding: 4rem 0 3.2rem;
+
+    @include respond(tab) {
+      font-size: 4rem;
+      line-height: 4.4rem;
+      letter-spacing: 1.43px;
+    }
+
+    @include respond(desktop) {
+      padding-top: 0;
+    }
+
+    &--highlited {
+      color: var(--color-primary);
+    }
+  }
+}
