@@ -24,9 +24,9 @@ const Speakers = () => {
               reverseRow={index % 2 === 0}
             />
           ))}
+        <ProductsCTA />
+        <GearCard />
       </ProductsSection>
-      <ProductsCTA />
-      <GearCard />
     </>
   );
 };

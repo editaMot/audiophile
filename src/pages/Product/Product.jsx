@@ -5,6 +5,7 @@ import Loader from "../../ui/Loader";
 import NotFound from "../../ui/NotFound";
 import ProductCard from "../../ui/ProductCard";
 import ProductsCTA from "../../ui/ProductsCTA";
+import ProductsSection from "../../ui/ProductsSection/ProductsSection";
 
 const Product = () => {
   const { productId } = useParams();
@@ -15,11 +16,11 @@ const Product = () => {
   return !Object.keys(data).length ? (
     <NotFound />
   ) : (
-    <>
+    <ProductsSection>
       <ProductCard product={data} productDetails={true} />
       <ProductsCTA />
       <GearCard />
-    </>
+    </ProductsSection>
   );
 };
 
