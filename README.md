@@ -13,4 +13,4 @@ AUDIOPHILE E-COMMERCE WEBSITE
 4. Styling: SCSS
 5. Data base: Supabase
 6. Animations: Framer Motion
-7. Deployment: Netlify ()
+7. Deployment: Netlify (https://audio-ecommerce.netlify.app)
